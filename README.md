@@ -14,7 +14,7 @@ A lightweight internal feedback system designed for companies to facilitate ongo
 | Backend    | FastAPI (Python)                                    |
 | Database   | SQLite (for MVP)                                    |
 | Auth       | Mocked authentication                               |
-| Deployment | (Optional: Vercel for frontend, Docker for backend) |
+| Deployment | Vercel for frontend, Docker for backend           | 
 
 ---
 
@@ -68,6 +68,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
 ```
 
 ### 🛠️ Run Instructions
